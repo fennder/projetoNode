@@ -14,4 +14,10 @@ code {
 
 body{
   padding: 50px;
+  background-color: #efefef;
+}
+
+p{
+  background-color: #999;
+  padding: 10px;
 }
