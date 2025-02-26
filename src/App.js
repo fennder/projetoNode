@@ -3,25 +3,22 @@ import './App.css';
 
 // Import de componentes criados
 import HelloWorld from "./components/HelloWorld";
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-  const name = "Edir Pereira";
-  let a = 1;
-  let b = 2;
-  
-  function sum(){
-    return a + b;
-  }
-
-  const url = "https://upload.wikimedia.org/wikipedia/pt/4/44/GladiadorPoster.jpg";
-
   return(
     <div className='App'>
-      <p>Testando o JSX</p>
-      <p>Olá {name}</p>
-      <p>Soma é {sum()}</p>
-      <img src='{url}' alt='Informação da Imagem'></img>
       <HelloWorld />
+      <SayMyName nome="Edir Pereira" />
+      <SayMyName nome="Pedro Guimarães" />
+      <SayMyName nome="FRancisco Chagas" />
+      <Pessoa
+        nome="Rodrigo"
+        idade="25"
+        profissao="Programador"
+        foto="http://abrindoportas.tec.br/assets/perfil.png"
+      />
     </div>
   );
 
