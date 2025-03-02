@@ -13,7 +13,7 @@ function Item(props){
 export default Item
 
 Item.propTypes = {
-    marca: propTypes.string.isRequired,
+    marca: PropTypes.string.isRequired,
     ano_lancamento: PropTypes.number,
 }
 
