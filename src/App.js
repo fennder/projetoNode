@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
+import Condicional from './components/Condicional';
 
 // Import de componentes criados
 /*import HelloWorld from './components/HelloWorld';
@@ -8,19 +9,16 @@ import Pessoa from './components/Pessoa';
 import List from './components/List';
 import Frase from './components/Frase';*/
 
-import Evento from './components/Evento'
-import Form from './components/Form'
+//import Evento from './components/Evento'
+//import Form from './components/Form'
 
 function App() {
 //const nome = 'Maria'
 
   return(
     <div className='App'>
-      <h1>Testando eventos</h1>
-      <Evento/>
-      <div>
-        <Form />
-      </div>
+      <h1>Renderização condicional</h1>
+      <Condicional />
     </div>
   );
 
