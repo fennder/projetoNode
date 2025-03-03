@@ -17,8 +17,11 @@ function App() {
 
   return(
     <div className='App'>
-      <h1>Renderização condicional</h1>
-      <Condicional />
+      <h1>Testando eventos</h1>
+      <Evento/>
+      <div>
+        <Form />
+      </div>
     </div>
   );
 
