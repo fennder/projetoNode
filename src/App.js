@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
-import Condicional from './components/Condicional';
+//import Condicional from './components/Condicional';
 
 // Import de componentes criados
 /*import HelloWorld from './components/HelloWorld';
@@ -12,18 +13,17 @@ import Frase from './components/Frase';*/
 //import Evento from './components/Evento'
 //import Form from './components/Form'
 
-import OutraLista from './components/OutraLista';
+import SeuNome from './components/SeuNome'
+import Saudacao from './components/Saudacao'
 
 function App() {
-
-  const meusItens = ['React', 'Vue', 'Angular']
+  const [nome, setNome] = useState()
 
   return(
     <div className='App'>
-      <h1>Renderização de Listas</h1>
-      <Condicional />
-      <OutraLista itens={meusItens} />
-      <OutraLista itens={[]} />
+      <h1>State Life</h1>
+      <SeuNome setNome={setNome}/>
+      <Saudacao nome={nome} />
     </div>
   );
 
