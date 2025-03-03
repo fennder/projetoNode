@@ -12,16 +12,18 @@ import Frase from './components/Frase';*/
 //import Evento from './components/Evento'
 //import Form from './components/Form'
 
+import OutraLista from './components/OutraLista';
+
 function App() {
-//const nome = 'Maria'
+
+  const meusItens = ['React', 'Vue', 'Angular']
 
   return(
     <div className='App'>
-      <h1>Testando eventos</h1>
-      <Evento/>
-      <div>
-        <Form />
-      </div>
+      <h1>Renderização de Listas</h1>
+      <Condicional />
+      <OutraLista itens={meusItens} />
+      <OutraLista itens={[]} />
     </div>
   );
 
